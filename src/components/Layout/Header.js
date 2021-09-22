@@ -1,5 +1,5 @@
 import React from 'react'
-
+import HeaderCartButton from './HeaderCartButton'
 import calsses from './Header.module.css'
 import mealsImage from '../../assets/meals.jpg'
 const Header = (props) => {
@@ -7,7 +7,7 @@ const Header = (props) => {
         <React.Fragment>
             <header className={calsses.header}>
                 <h1>ReactMeals</h1>
-                <button>Cart</button>
+                <HeaderCartButton/>
             </header>
             <div className={calsses['main-image']}>
                 <img src={mealsImage} alt='a table of full of delicious food'/>
